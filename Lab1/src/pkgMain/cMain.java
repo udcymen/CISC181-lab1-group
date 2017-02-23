@@ -1,3 +1,7 @@
+//Meng Cong 40%
+//Trackenberg Ryan 40%
+//Wang Jun 20%
+
 package pkgMain;
 
 import java.util.Scanner;
@@ -21,8 +25,9 @@ public class cMain {
 		MSSI = input.nextDouble();
 		PMT = RI - MSSI;
 		PV = PMT / (AR2 / 12) * (1 - 1 / Math.pow(1 + (AR2 / 12), YR * 12));
-		System.out.println("What you need to save in total " + PV);
+		System.out.printf("What you need to save in total : $%.2f", PV);
+		System.out.println(" ");
 		MS = PV * ((AR1 / 12) / (Math.pow(1 + (AR1 / 12), YTW * 12) - 1));
-		System.out.println("What you need to save monthly " + MS);
+		System.out.printf("What you need to save monthly : $%.2f", MS);
 	}
 }
